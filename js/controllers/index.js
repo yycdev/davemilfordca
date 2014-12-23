@@ -1,4 +1,5 @@
 define([
-    './my-ctrl-1',
-    './my-ctrl-2'
+    './home',
+    './whoami',
+    './whatdoido'
 ], function() {});

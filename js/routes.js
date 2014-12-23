@@ -10,9 +10,13 @@ define(['./app'], function(app) {
             templateUrl: 'partials/homepage.html',
             controller: 'HomeCtrl'
         });
-        $routeProvider.when('/view2', {
-            templateUrl: 'partials/partial2.html',
-            controller: 'MyCtrl2'
+        $routeProvider.when('/whoami', {
+            templateUrl: 'partials/whoami.html',
+            controller: 'WhoAmICtrl'
+        });
+        $routeProvider.when('/whatdoido', {
+            templateUrl: 'partials/whatdoido.html',
+            controller: 'WhatDoIDoCtrl'
         });
         $routeProvider.otherwise({
             redirectTo: '/'

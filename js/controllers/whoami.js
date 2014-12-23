@@ -1,4 +1,4 @@
 define(['./module'], function(controllers) {
     'use strict';
-    controllers.controller('MyCtrl2', [function($scope) {}]);
+    controllers.controller('WhoAmICtrl', [function($scope) {}]);
 });
