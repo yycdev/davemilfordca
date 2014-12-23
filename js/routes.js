@@ -4,8 +4,9 @@
 */
 define(['./app'], function(app) {
     'use strict';
-    return app.config(['$routeProvider', function($routeProvider) {
-        $routeProvider.when('/home', {
+    return app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+        $locationProvider.html5Mode(true);
+        $routeProvider.when('/', {
             templateUrl: 'partials/homepage.html',
             controller: 'HomeCtrl'
         });
@@ -14,7 +15,7 @@ define(['./app'], function(app) {
             controller: 'MyCtrl2'
         });
         $routeProvider.otherwise({
-            redirectTo: '/home'
+            redirectTo: '/'
          });
     }]);
 });
