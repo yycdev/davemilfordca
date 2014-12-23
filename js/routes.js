@@ -5,7 +5,7 @@
 define(['./app'], function(app) {
     'use strict';
     return app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-        $locationProvider.html5Mode(true);
+      //  $locationProvider.html5Mode(true);
         $routeProvider.when('/', {
             templateUrl: 'partials/homepage.html',
             controller: 'HomeCtrl'
