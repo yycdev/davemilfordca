@@ -5,9 +5,12 @@
 */
 require.config({
     paths: {
-        'angular': 'lib/angular/angular',
-        'angular-route': 'lib/angular-route/angular-route',
-        'domReady': 'lib/requirejs-domready/domReady'
+        'angular': '//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular',
+        'angular-route': '//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-route',
+        'angular-strap': '//cdnjs.cloudflare.com/ajax/libs/angular-strap/2.1.4/angular-strap',
+        'angular-strap-tpl': '//cdnjs.cloudflare.com/ajax/libs/angular-strap/2.1.4/angular-strap.tpl',
+        'domReady': 'lib/requirejs-domready/domReady',
+        'jquery': '//code.jquery.com/jquery-2.1.3.min'
     },
     /**
     * for libs that either do not support AMD out of the box, or
@@ -16,9 +19,18 @@ require.config({
     shim: {
         'angular': {
             exports: 'angular'
-    },
-    'angular-route': {
-        deps: ['angular']
+        },
+        'angular-route': {
+            deps: ['angular']
+        },
+        'angular-strap': {
+            deps: ['angular', 'jquery']
+        },
+        'angular-strap-tpl': {
+            deps: ['angular-strap']
+        },
+        'jquery': {
+            exports: '$'
         }
     },
     deps: [

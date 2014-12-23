@@ -5,6 +5,8 @@
 define([
   'angular',
   'angular-route',
+  'angular-strap',
+  'angular-strap-tpl',
   './controllers/index',
   './directives/index',
   './filters/index',
@@ -17,6 +19,7 @@ define([
     'app.directives',
     'app.filters',
     'app.services',
-    'ngRoute'
+    'ngRoute',
+    'mgcrea.ngStrap'
   ]);
 });

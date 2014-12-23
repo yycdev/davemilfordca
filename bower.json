@@ -9,6 +9,7 @@
   "dependencies": {
     "angular": "latest",
     "angular-route": "latest",
+    "angular-strap": "latest",
     "requirejs": "latest",
     "requirejs-domready": "latest"
   }
