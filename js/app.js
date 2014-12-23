@@ -20,6 +20,7 @@ define([
     'app.filters',
     'app.services',
     'ngRoute',
-    'mgcrea.ngStrap'
+    'mgcrea.ngStrap',
+    'mgcrea.ngStrap.helpers.dimensions'
   ]);
 });
