@@ -73,3 +73,9 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# My stuff
+*.sublime-project
+*.sublime-workspace
+bower_components/*
+node_modules/*
