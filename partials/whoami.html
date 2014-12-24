@@ -1,15 +1,16 @@
+<div id="top" ng-include src="'partials/nav-header.html'"></div>
 
-
+<div class="whoiam">
     <!-- Navigation -->
     <a id="menu-toggle" ng-click="toggleMenu()" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper" ng-class="menuToggleState">
         <ul class="sidebar-nav">
             <a id="menu-close" ng-click="toggleMenu()" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top">Start Bootstrap</a>
+                <a href="/#/home">Dave Milford</a>
             </li>
             <li>
-                <a href="#top">Home</a>
+                <a href="/#/home">Home</a>
             </li>
             <li>
                 <a href="#services">Services</a>
@@ -24,7 +25,7 @@
     </nav>
 
     <!-- Header -->
-    <header id="top" class="page-header callout">
+    <header class="page-header callout">
         <div class="text-vertical-center">
             <h1>Who I Am</h1>
         </div>
@@ -201,4 +202,4 @@
         </div>
     </footer>
     </section>
-
+</div>
