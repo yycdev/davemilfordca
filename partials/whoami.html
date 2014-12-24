@@ -1,33 +1,32 @@
+
+
     <!-- Navigation -->
-	<div id="sidebar-wrapper">
-        <ul class="sidebar-nav" bs-scrollspy>
-            <li data-target="#top" class="sidebar-brand" bs-scrollspy>
-                <a href="#/home">Dave Milford</a>
+    <a id="menu-toggle" ng-click="toggleMenu()" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper" ng-class="menuToggleState">
+        <ul class="sidebar-nav">
+            <a id="menu-close" ng-click="toggleMenu()" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top">Start Bootstrap</a>
             </li>
-            <li data-target="#top" bs-scrollspy>
-                <a href="#/home">Home</a>
+            <li>
+                <a href="#top">Home</a>
             </li>
-            <li data-target="#about" bs-scrollspy>
-                <a href="#about">About</a>
-            </li>
-            <li data-target="#services" bs-scrollspy>
+            <li>
                 <a href="#services">Services</a>
             </li>
-            <li data-target="#portfolio" bs-scrollspy>
+            <li>
                 <a href="#portfolio">Portfolio</a>
             </li>
-            <li data-target="#contact" bs-scrollspy>
+            <li>
                 <a href="#contact">Contact</a>
             </li>
         </ul>
-    </div>
+    </nav>
+
     <!-- Header -->
-    <header id="top" class="header">
+    <header id="top" class="page-header callout">
         <div class="text-vertical-center">
-            <h1>Hello There</h1>
-            <h3>I'm Dave Milford</h3>
-            <br>
-            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+            <h1>What I Do</h1>
         </div>
     </header>
 
@@ -50,7 +49,7 @@
                                     <strong>C++</strong>
                                 </h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#top" class="btn btn-light">Learn More</a>
+                                <a href="#" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -63,7 +62,7 @@
                                     <strong>C#</strong>
                                 </h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#top" class="btn btn-light">Learn More</a>
+                                <a href="#" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -73,10 +72,10 @@
                                 <i class="fa fa-flask fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>HTML5</strong>
+                                    <strong>Objective-C</strong>
                                 </h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#top" class="btn btn-light">Learn More</a>
+                                <a href="#" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -86,10 +85,10 @@
                                 <i class="fa fa-shield fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>Obj-C</strong>
+                                    <strong>HTML5</strong>
                                 </h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#top" class="btn btn-light">Learn More</a>
+                                <a href="#" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -147,7 +146,7 @@
                         </div>
                     </div>
                     <!-- /.row (nested) -->
-                    <a href="#" class="btn btn-dark">View More Examples</a>
+                    <a href="#" class="btn btn-dark">View More Items</a>
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -168,3 +167,38 @@
             </div>
         </div>
     </aside>
+
+
+    <!-- Map -->
+    <section id="contact">
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Dave Milford</strong>
+                    </h4>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="http://facebook.com/davemilford"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-send fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://ca.linkedin.com/in/davemilford"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.flickr.com/photos/asherian/sets/"><i class="fa fa-flickr fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Dave Milford 2015</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </section>
+

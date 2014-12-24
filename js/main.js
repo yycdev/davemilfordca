@@ -10,8 +10,8 @@ require.config({
         'angular-strap': '//cdnjs.cloudflare.com/ajax/libs/angular-strap/2.1.4/angular-strap',
         'angular-strap-tpl': '//cdnjs.cloudflare.com/ajax/libs/angular-strap/2.1.4/angular-strap.tpl',
         'domReady': 'lib/requirejs-domready/domReady',
-        'jquery': '//code.jquery.com/jquery-2.1.3.min'
-     //   'bootstrap-js': 'lib/bootstrap'
+        'jquery': '//code.jquery.com/jquery-2.1.3.min',
+        'bootstrap-js': 'lib/bootstrap'
     },
     /**
     * for libs that either do not support AMD out of the box, or
@@ -32,10 +32,10 @@ require.config({
         },
         'jquery': {
             exports: '$'
+        },
+        'bootstrap-js': {
+            deps: ['jquery']
         }
-      //  'bootstrap-js': {
-     //       deps: ['jquery']
-      //  }
     },
     deps: [
         // kick start application... see bootstrap.js
