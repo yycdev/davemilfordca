@@ -203,7 +203,6 @@ hr.small {
 .portfolio-item {
     position: relative;
     margin-bottom: 30px;
-    transition: all 1s ease;
 }
 
 .portfolio-item-details {
@@ -232,28 +231,19 @@ hr.small {
 .tilt:hover {
   -webkit-transform: rotateX(20deg);
   -webkit-transform-style: preserve-3d;
+  -moz-transform: rotateX(20deg);
+  -moz-transform-style: preserve-3d;
+  -ms-transform: rotateX(20deg);
+  -ms-transform-style: preserve-3d;
+  -o-transform: rotateX(20deg);
+  -o-transform-style: preserve-3d;
+  transform: rotateX(20deg);
+  transform-style: preserve-3d;
 }
+
 .img-portfolio {
     width: 100%;
 }
-
-
-.button {
-  width: 123px;
-  height: 123px;
-  margin: -123px auto 0 auto;
-  background: url(../img/next.png) center center no-repeat;
-  opacity: 0;
-  border-radius: 50%;
-  transition: all .2s ease;
-}
-
-@keyframes scale {
-  0%   { transform:scale(1); }
-  50%   { transform:scale(1.1); }
-  100% { transform:scale(1); }
-}
-
 
 /* Call to Action */
 
