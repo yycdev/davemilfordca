@@ -30,7 +30,4 @@ define(['./module'], function(controllers) {
     menuController.$inject=['$scope','whoAmIMenuContents', 'whatIDoMenuContents'];
 
     controllers.controller('MenuCtrl', ['$scope', 'whoAmIMenuContents', 'whatIDoMenuContents', menuController]);
-    	  
-
-
 });
