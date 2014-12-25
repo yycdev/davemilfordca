@@ -203,7 +203,6 @@ hr.small {
 }
 
 .portfolio-item:hover {
-  background-color: #222;
   color: #fff;
   opacity:0.7;
   transform:scale(1);
@@ -239,6 +238,7 @@ hr.small {
     width: 100%;
     -moz-border-radius: 15px;
     border-radius: 15px;
+    background-color: #337ab7;
 }
 
 /* Call to Action */
@@ -308,8 +308,8 @@ footer {
 
 .navbar-brand:hover,
 .navbar-brand:focus {
-    color: #000;
-    background-color: transparent;
+    color: #fff;
+    background-color: #999;
 }
 
 .navbar-nav > li  {

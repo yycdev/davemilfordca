@@ -7,6 +7,7 @@ require.config({
     paths: {
         'angular': '//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular',
         'angular-route': '//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-route',
+        'angular-sanitize': '//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-sanitize',
         'angular-strap': '//cdnjs.cloudflare.com/ajax/libs/angular-strap/2.1.4/angular-strap',
         'angular-strap-tpl': '//cdnjs.cloudflare.com/ajax/libs/angular-strap/2.1.4/angular-strap.tpl',
         'domReady': 'lib/requirejs-domready/domReady',
@@ -22,6 +23,9 @@ require.config({
             exports: 'angular'
         },
         'angular-route': {
+            deps: ['angular']
+        },
+        'angular-sanitize': {
             deps: ['angular']
         },
         'angular-strap': {
