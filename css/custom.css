@@ -68,17 +68,17 @@ hr.small {
 }
 
 #wrapper.toggled {
-    padding-left: 175px;
+    padding-left: 125px;
 }
 
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
     top: 55px;
-    left: 175px;
+    left: 125px;
     width: 0;
     height: 100%;
-    margin-left: -175px;
+    margin-left: -125px;
     overflow-y: auto;
     background: #fff;
     -webkit-transition: all 0.5s ease;
@@ -88,7 +88,7 @@ hr.small {
 }
 
 #wrapper.toggled #sidebar-wrapper {
-    width: 175px;
+    width: 125px;
 }
 
 #page-content-wrapper {
@@ -99,7 +99,7 @@ hr.small {
 
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
-    margin-right: -175px;
+    margin-right: -125px;
 }
 
 /* Sidebar Styles */
@@ -107,7 +107,7 @@ hr.small {
 .sidebar-nav {
     position: absolute;
     top: 0;
-    width: 175px;
+    width: 125px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -152,7 +152,7 @@ hr.small {
 
 @media(min-width:768px) {
     #wrapper {
-        padding-left: 175px;
+        padding-left: 125px;
     }
 
     #wrapper.toggled {
@@ -160,7 +160,7 @@ hr.small {
     }
 
     #sidebar-wrapper {
-        width: 175px;
+        width: 125px;
     }
 
     #wrapper.toggled #sidebar-wrapper {
@@ -344,12 +344,17 @@ footer {
 
 .navbar-header {
     float: left;
+    width: 140px;
 }
 
 .navbar-brand:hover,
 .navbar-brand:focus {
     color: #fff;
     background-color: #999;
+}
+
+.navbar-nav {
+    text-align: center;
 }
 
 .navbar-nav > li  {

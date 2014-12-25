@@ -1,13 +1,10 @@
 define(['./module'], function(controllers) {
     'use strict';
 
-    function menuController($scope, whoAmIMenuContents, whatIDoMenuContents)
+    function menuController($scope)
     {    	
-    	$scope.whoamidropdownlist = whoAmIMenuContents;
-    	$scope.whatidodropdownlist = whatIDoMenuContents;
+
     }
 
-    menuController.$inject=['$scope','whoAmIMenuContents', 'whatIDoMenuContents'];
-
-    controllers.controller('MenuCtrl', ['$scope', 'whoAmIMenuContents', 'whatIDoMenuContents', menuController]);
+    controllers.controller('MenuCtrl', ['$scope', menuController]);
 });

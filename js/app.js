@@ -21,9 +21,9 @@ define([
     'app.directives',
     'app.filters',
     'ngRoute',
-   // 'mgcrea.ngStrap',
-   // 'mgcrea.ngStrap.helpers.dimensions',
-   // 'mgcrea.ngStrap.tooltip',
+    'mgcrea.ngStrap',
+    'mgcrea.ngStrap.helpers.dimensions',
+    'mgcrea.ngStrap.tooltip',
     'duScroll'
   ]);
 });
