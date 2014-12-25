@@ -5,11 +5,11 @@
 */
 require.config({
     paths: {
-        'angular': '//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular',
-        'angular-route': '//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-route',
-        'angular-strap': '//cdnjs.cloudflare.com/ajax/libs/angular-strap/2.1.5/angular-strap',
-        'angular-strap-tpl': '//cdnjs.cloudflare.com/ajax/libs/angular-strap/2.1.5/angular-strap.tpl',
-        'angular-scroll': 'lib/angular-scroll/angular-scroll',
+        'angular': '//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min',
+        'angular-route': '//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-route.min',
+        'angular-strap': '//cdnjs.cloudflare.com/ajax/libs/angular-strap/2.1.5/angular-strap.min',
+        'angular-strap-tpl': '//cdnjs.cloudflare.com/ajax/libs/angular-strap/2.1.5/angular-strap.tpl.min',
+        'angular-scroll': 'lib/angular-scroll/angular-scroll.min',
         'domReady': 'lib/requirejs-domready/domReady'
     },
     /**
