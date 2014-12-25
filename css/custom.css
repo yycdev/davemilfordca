@@ -2,7 +2,7 @@ html,
 body {
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
+
 }
 
 body {
@@ -68,18 +68,19 @@ hr.small {
 }
 
 #wrapper.toggled {
-    padding-left: 250px;
+    padding-left: 175px;
 }
 
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
-    left: 250px;
+    top: 55px;
+    left: 175px;
     width: 0;
     height: 100%;
-    margin-left: -250px;
+    margin-left: -175px;
     overflow-y: auto;
-    background: #222;
+    background: #fff;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -87,7 +88,7 @@ hr.small {
 }
 
 #wrapper.toggled #sidebar-wrapper {
-    width: 250px;
+    width: 175px;
 }
 
 #page-content-wrapper {
@@ -98,7 +99,7 @@ hr.small {
 
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
-    margin-right: -250px;
+    margin-right: -175px;
 }
 
 /* Sidebar Styles */
@@ -106,7 +107,7 @@ hr.small {
 .sidebar-nav {
     position: absolute;
     top: 0;
-    width: 250px;
+    width: 175px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -120,12 +121,12 @@ hr.small {
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #999999;
+    color: #888888;
 }
 
 .sidebar-nav li a:hover {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     background: rgba(255,255,255,0.2);
 }
 
@@ -141,7 +142,7 @@ hr.small {
 }
 
 .sidebar-nav > .sidebar-brand a {
-    color: #999999;
+    color: #888888;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
@@ -151,7 +152,7 @@ hr.small {
 
 @media(min-width:768px) {
     #wrapper {
-        padding-left: 250px;
+        padding-left: 175px;
     }
 
     #wrapper.toggled {
@@ -159,7 +160,7 @@ hr.small {
     }
 
     #sidebar-wrapper {
-        width: 250px;
+        width: 175px;
     }
 
     #wrapper.toggled #sidebar-wrapper {
@@ -374,8 +375,8 @@ footer {
 .navbar-nav > .active > a,
 .navbar-nav > .active > a:hover,
 .navbar-nav > .active > a:focus {
-  color: #000000;
-  background-color: #e7e7e7;
+  color: #fff;
+  background-color: #000;
 }
 
 .pagenav {

@@ -5,9 +5,9 @@
 define([
   'angular',
   'angular-route',
-  'angular-sanitize',
   'angular-strap',
   'angular-strap-tpl',
+  'angular-scroll',
   './services/index',
   './controllers/index',
   './directives/index',
@@ -21,9 +21,9 @@ define([
     'app.directives',
     'app.filters',
     'ngRoute',
-    'ngSanitize',
-    'mgcrea.ngStrap',
-    'mgcrea.ngStrap.helpers.dimensions',
-    'mgcrea.ngStrap.tooltip'
+   // 'mgcrea.ngStrap',
+   // 'mgcrea.ngStrap.helpers.dimensions',
+   // 'mgcrea.ngStrap.tooltip',
+    'duScroll'
   ]);
 });
