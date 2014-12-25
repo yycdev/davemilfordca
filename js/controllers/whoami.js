@@ -1,7 +1,7 @@
 define(['./module'], function(controllers) {
     'use strict';
 
-    function whoAmIController($scope, whoAmIMenuContents)
+    function whoAmIController($scope, whoAmIMenuContents, whatIDoMenuContents)
     {
     	// Scrolls to the selected menu item on the page
     	$(function() 
@@ -26,7 +26,7 @@ define(['./module'], function(controllers) {
   		$scope.whoamidropdownlist = whoAmIMenuContents;
     } // whoAmIController
 
-    whoAmIController.$inject=['$scope','whoAmIMenuContents'];
+    whoAmIController.$inject=['$scope','whoAmIMenuContents', 'whatIDoMenuContents'];
 
-    controllers.controller('WhoAmICtrl', ['$scope', 'whoAmIMenuContents', whoAmIController]);
+    controllers.controller('WhoAmICtrl', ['$scope', 'whoAmIMenuContents', 'whatIDoMenuContents', whoAmIController]);
 });

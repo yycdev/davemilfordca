@@ -1,5 +1,6 @@
 define([
     './home',
     './whoami',
-    './whatdoido'
+    './whatdoido',
+    './menu'
 ], function() {});
