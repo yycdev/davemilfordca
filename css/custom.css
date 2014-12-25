@@ -118,6 +118,11 @@ hr.small {
     line-height: 40px;
 }
 
+.sidebar-nav li :active {
+    background: red;
+    height: 100px
+}
+
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
@@ -132,7 +137,7 @@ hr.small {
 
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .sidebar-nav > .sidebar-brand {
