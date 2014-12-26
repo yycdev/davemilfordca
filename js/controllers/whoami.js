@@ -3,6 +3,16 @@ define(['./module'], function(controllers) {
 
     function whoAmIController($scope)
     {
+    	var container = angular.element(document.getElementById('page-content-wrapper-contents'));
+    	var geekery = angular.element(document.getElementById('geekery'));
+
+	    $scope.toTheTop = function() {
+	      container.scrollTop(0, 5000);
+	    };
+
+	    $scope.toGeekery = function() {
+	      container.scrollTo(geekery, 0, 1000);
+	    };
 
     } // whoAmIController
 
