@@ -247,19 +247,6 @@ a.active {
     -o-background-size: cover;
 }
 
-#whoamisectionheader {
-    background: url(../img/textured-blue-background.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-.whitetextonimage {
-    text-shadow: 0 2px 3px #555;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
 /* Portfolio */
 
 .portfolio {
@@ -463,6 +450,167 @@ footer {
     display: table;
     width: 100%;
     height: 100%;
-    color: #fff;
     word-wrap: break-word;
+}
+
+.whitetext {
+    color: #fff;
+}
+
+.blacktext {
+    color: #000;
+}
+
+.whitetextonimage {
+    color: #fff;
+    text-shadow: 0 2px 3px #555;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.roundedcorner {
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+#whoamisection {
+    background: url(../img/textured-blue-background.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#geekerysection {
+    background: #fff;
+}
+
+#photographysection{
+    background: #337ab7;
+}
+
+
+
+
+/* slideshow */
+.slider {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    background: #e6e6e6;
+    border: 20px solid #fff;
+    margin-top: 20px;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.arrow {
+    position: absolute;
+    z-index: 1002;
+    display: block;
+    top: 50%;
+    margin-top: -35px;
+    width: 36px;
+    height: 71px;
+    outline: none;
+    cursor: pointer;
+    background: url('../img/assets/blank.gif') no-repeat;
+}
+
+.arrow.prev {
+    opacity: 0.6;
+    left: 20px;
+    transition: 0.2s linear all;
+}
+
+.arrow.next {
+    opacity: 0.6;
+    right: 20px;
+    transition: 0.2s linear all;
+}
+
+.arrow.prev:hover {
+    opacity: 1;
+
+}
+
+.arrow.next:hover {
+    opacity: 1;
+
+}
+
+
+
+/*---------------------------------------------------------
+NAV
+---------------------------------------------------------*/
+
+.navi {
+    text-align: center;
+    display: block;
+    position: absolute;
+    z-index: 1002;
+    left: 0;
+    bottom: -4px;
+    right: 0;
+    height: 48px;
+}
+
+.nonDraggableImage{
+    -webkit-user-drag: none;
+}
+
+.navi .wrapper {
+    margin: 0 auto;
+    width: 100%;
+    padding: 1em 0 .8em;
+}
+
+.navi ul {
+    margin: 0;
+    width: 100%;
+}
+
+.navi .dot, .nav .dot a {
+    display: inline-block;
+    zoom: 1;
+}
+
+.dots .dot {
+    position: relative;
+    margin: 0 8px;
+    width: 12px;
+    height: 12px;
+}
+
+.dots .dot a {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 6px;
+    height: 6px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: background-color 0.25s, border-color 0.25s;
+    -moz-transition: background-color 0.25s, border-color 0.25s;
+    transition: background-color 0.25s, border-color 0.25s;
+}
+
+.dots .dot a.active {
+    border-color: #FFF;
+    background-color: #000;
 }

@@ -5,13 +5,16 @@
 define([
   'angular',
   'angular-route',
+  'angular-animate',
+  'angular-touch',
   'angular-strap',
   'angular-strap-tpl',
   'angular-scroll',
   './services/index',
   './controllers/index',
   './directives/index',
-  './filters/index'
+  './filters/index',
+  'jquery'
   ], function(angular) {
   'use strict';
 
@@ -21,6 +24,8 @@ define([
     'app.directives',
     'app.filters',
     'ngRoute',
+    'ngAnimate',
+    'ngTouch',
     'mgcrea.ngStrap',
     'mgcrea.ngStrap.helpers.dimensions',
     'mgcrea.ngStrap.tooltip',

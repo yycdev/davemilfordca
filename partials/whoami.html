@@ -1,6 +1,6 @@
 <div id="top" ng-include src="'partials/nav-header.html'"></div>
 
-    <div id="wrapper">
+    <div id="wrapper" ng-controller="WhoAmICtrl">
 
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
@@ -33,7 +33,7 @@
                 <!-- Bio -->
                 <div id="bio" class="row">
                     <div class="col-md-12">
-                        <section id="whoamisectionheader" class="page-section full">
+                        <section id="whoamisection" class="page-section full">
                             <div class="row ">
                                 <div class="section-header col-md-12 whitetextonimage">
                                     <h1>Who I Am</h1>
@@ -43,7 +43,7 @@
                                 <div class="col-md-offset-1 col-md-4">
                                     <img class="img-responsive" src="img/whoami.png" alt="My Picture"/>
                                 </div>
-                                <div id="whoiamsectiontext" class="col-md-7 section-text alternatelinkcolor">
+                                <div id="whoiamsectiontext" class="col-md-7 section-text whitetext alternatelinkcolor">
                                     <p>
                                         A Canadian software developer by trade. <br/>
                                         Born and (mostly) raised in Calgary, Alberta, and currently residing there.<br/>
@@ -56,7 +56,7 @@
                                         where I received a B.Sc. in Computer Science (with concentration in Software Engineering).
                                     </p>
                                 </div>
-                        </div>
+                            </div>
                         </section>
                     </div>
                 </div>
@@ -64,20 +64,78 @@
                  <!-- Geekery -->
                 <div id="geekery" class="row">
                     <div class="col-md-12">
-                        <section class="callout">
-                            <div class="text-vertical-center">
-                                <h1>Geekery</h1>
+                        <section id="geekerysection" class="page-section full">
+                            <div class="row ">
+                                <div class="section-header col-md-12">
+                                    <h1>Geekery</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div id="geekerysectiontext" class="col-md-offset-1 col-md-6 section-text blacktext">
+                                    <p>
+                                        I've always been a geek. 
+                                    </p>
+                                    <br/>
+                                    <p>
+                                        I built legos, watched Star Trek, owned all the game consoles, built computers, and 
+                                        even programmed as a kid. Always had that fascination with how things worked. I wanted
+                                        to learn how to do it all.
+                                    </p>
+                                    <br/>
+                                    <p>
+                                        I'm a <b>builder</b>: I always want to make something.  It's not enough to play games, I need to
+                                        make them too.  It's also how I learn -- I'm a hands-on learner and I want to learn by making.
+                                        That's where this website came from - I wanted to learn a bunch of new technologies. And
+                                        I didn't want to read about it.  I wanted to learn by building.
+                                    </p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img class="img-responsive roundedcorner" src="img/geek.jpg" alt="Legos"/>
+                                </div>
                             </div>
                         </section>
                     </div>
                 </div>
 
-                <!-- Photography -->
+                 <!-- Photography -->
                 <div id="photography" class="row">
                     <div class="col-md-12">
-                        <section class="callout">
-                            <div class="text-vertical-center">
-                                <h1>Photography</h1>
+                        <section id="photographysection" class="page-section full">
+                            <div class="row ">
+                                <div class="section-header col-md-12 whitetext">
+                                    <h1>Photography</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div id="photographysectiontext" class="col-md-offset-3 col-md-6 section-text whitetext">
+                                    <p>
+                                        I took a photography course in high school, borrowing my dad's 1980s-era Canon SLR, and I loved it.
+                                        When I graduated from university, I bought a Canon digital SLR and have been shooting with it since.
+                                    </p>
+                                    <p>
+                                        <center><a class="btn btn-default" href="https://www.flickr.com/photos/asherian/sets/" target="_blank">Check out my flickr profile</a></center>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!-- Slideshow -->
+                                <div class="container slider hidden-xs hidden-sm">
+                                    <img ng-repeat="slide in slides" class="slide slide-animation nonDraggableImage"
+                                         ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()"
+                                         ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
+
+                                    <a class="arrow prev" ng-click="nextSlide()"><i class="fa fa-arrow-left fa-fw fa-3x"></i></a>
+                                    <a class="arrow next" ng-click="prevSlide()"><i class="fa fa-arrow-right fa-fw fa-3x"></i></a>
+                                    <nav class="navi">
+                                        <div class="wrapper">
+                                            <ul class="dots">
+                                                <li class="dot" ng-repeat="slide in slides">
+                                                    <a ng-class="{'active':isCurrentSlideIndex($index)}"
+                                                       ng-click="setCurrentSlideIndex($index);">{{slide.description}}</a></li>
+                                            </ul>
+                                        </div>
+                                    </nav>
+                                </div>
                             </div>
                         </section>
                     </div>
