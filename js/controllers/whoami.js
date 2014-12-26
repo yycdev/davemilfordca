@@ -4,8 +4,8 @@ define(['./module', 'jquery', 'gsap'], function(controllers) {
     function whoAmIController($scope)
     {
     	    $scope.slides = [
-            {image: 'img/flickr/bee_sm.jpg', description: 'Image 00'},
-            {image: 'img/flickr/bird_sm.jpg', description: 'Image 01'},
+    	    {image: 'img/flickr/bird_sm.jpg', description: 'Image 00'},
+            {image: 'img/flickr/bee_sm.jpg', description: 'Image 01'},
             {image: 'img/flickr/cannery_sm.jpg', description: 'Image 02'},
             {image: 'img/flickr/columbia_sm.jpg', description: 'Image 03'},
             {image: 'img/flickr/creek_sm.jpg', description: 'Image 04'},
