@@ -467,6 +467,18 @@ footer {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.blacktextonimage {
+    color: #000;
+    text-shadow: 0 2px 3px #555;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.bluetextonimage {
+    color: #337ab7;
+    text-shadow: 0 2px 3px #555;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 .roundedcorner {
     -moz-border-radius: 15px;
     border-radius: 15px;
@@ -480,16 +492,40 @@ footer {
     -o-background-size: cover;
 }
 
+#geekerysectionheader {
+    background: url(../img/geekery.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 300px;
+    -webkit-mask-image:-webkit-linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,1) 90%, rgba(0,0,0,0.9) 95%, rgba(0,0,0,0) 100%);
+}
+
 #geekerysection {
     background: #fff;
+    overflow-x: hidden;
+}
+
+#alwaysbeenageek {
+    opacity: 1;
+    font-size: 2em;
+    color: #000;
+    font-family: 'Indie Flower', cursive;
+    padding: 40px;
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(20,20,20,0) 70%, rgba(0,0,0,0) 76%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(70%,rgba(20,20,20,0)), color-stop(76%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(20,20,20,0) 70%,rgba(0,0,0,0) 76%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(20,20,20,0) 70%,rgba(0,0,0,0) 76%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(20,20,20,0) 70%,rgba(0,0,0,0) 76%); /* IE10+ */
+    background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(20,20,20,0) 70%,rgba(0,0,0,0) 76%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 
 #photographysection{
     background: #337ab7;
 }
-
-
-
 
 /* slideshow */
 .slider {

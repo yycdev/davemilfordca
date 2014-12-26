@@ -14,7 +14,8 @@ define([
   './controllers/index',
   './directives/index',
   './filters/index',
-  'jquery'
+  'jquery',
+  'gsap'
   ], function(angular) {
   'use strict';
 
