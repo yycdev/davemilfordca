@@ -650,3 +650,60 @@ NAV
     border-color: #FFF;
     background-color: #000;
 }
+
+.band {
+    text-align: center;
+    float:none;
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:-4px;
+    font-size: 1.9em;
+    font-family: 'Architects Daughter', cursive;
+    height: 100px;
+    line-height: 100px;
+    min-width: 250px;
+    margin: 5px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color: #fff;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    cursor: pointer;
+}
+
+#thenational {
+    background: url(../img/bands/thenational.jpg) no-repeat center center scroll;
+}
+
+#coldwarkids {
+    background: url(../img/bands/coldwarkids.jpg) no-repeat center center scroll;
+}
+
+#florence {
+    background: url(../img/bands/florence.jpg) no-repeat center center scroll;
+}
+
+#altj {
+    background: url(../img/bands/altj.jpg) no-repeat center center scroll;
+}
+
+#brokenbells {
+    background: url(../img/bands/brokenbells.jpg) no-repeat center center scroll;
+}
+
+#thexx {
+    background: url(../img/bands/thexx.jpg) no-repeat center center scroll;
+}
+
+#metric {
+    background: url(../img/bands/metric.jpg) no-repeat center center scroll;
+}
+
+#thekillers {
+    background: url(../img/bands/thekillers.jpg) no-repeat center center scroll;
+}
+
+#theblackkeys {
+    background: url(../img/bands/theblackkeys.jpg) no-repeat center center scroll;
+}
