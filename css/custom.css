@@ -795,12 +795,33 @@ NAV
     text-align: justify;
 }
 
+#experiencesection{
+    background: #337ab7;
+}
+
+
 #toolboxsection{
     background: #337ab7;
 }
 
 .tool {
     z-index: 1000;
+}
+
+#peoplesectionheader {
+    margin-bottom: 20px;
+    background: url(../img/people.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 300px;
+    -webkit-mask-image:-webkit-linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,1) 90%, rgba(0,0,0,0.9) 95%, rgba(0,0,0,0) 100%);
+}
+
+#geekerysection {
+    background: #fff;
+    overflow-x: hidden;
 }
 
 
