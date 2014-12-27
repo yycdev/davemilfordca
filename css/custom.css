@@ -1002,3 +1002,7 @@ label {
     color: #337ab7;
     font-weight: 700;
 }
+
+.service-item {
+    text-align: center;
+}
