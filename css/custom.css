@@ -670,6 +670,22 @@ NAV
     color: #fff;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     cursor: pointer;
+    border-radius: 15px;
+}
+
+/*B&W*/
+.bw {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+    -webkit-filter: grayscale(100%);
+}
+ 
+.bw:hover {
+  -webkit-filter: grayscale(0%);
+    border-radius: 50px;
 }
 
 #thenational {
@@ -707,3 +723,4 @@ NAV
 #theblackkeys {
     background: url(../img/bands/theblackkeys.jpg) no-repeat center center scroll;
 }
+
