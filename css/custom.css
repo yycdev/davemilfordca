@@ -484,6 +484,10 @@ footer {
     border-radius: 15px;
 }
 
+.imageborder {
+    border: 5px solid white;
+}
+
 #whoamisection {
     background: url(../img/textured-blue-background.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
@@ -525,6 +529,21 @@ footer {
 
 #photographysection{
     background: #337ab7;
+}
+
+#lifesectionheader {
+    background: url(../img/life.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 300px;
+    -webkit-mask-image:-webkit-linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,1) 90%, rgba(0,0,0,0.9) 95%, rgba(0,0,0,0) 100%);
+}
+
+#lifesection {
+    background: #337ab7;
+    overflow-x: hidden;
 }
 
 /* slideshow */
