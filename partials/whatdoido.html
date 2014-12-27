@@ -245,210 +245,156 @@
                     </div>
                 </div>
 
-                 <!-- Geekery -->
-                <div id="geekery" class="row">
+                <!-- Toolbox -->
+                <div id="toolbox" class="row">
                     <div class="col-md-12">
-                        <section id="geekerysection" class="page-section full">
-                            <div id="geekerysectionheader">
-                                <div class="row">
-                                    <div class="section-header col-md-12 bluetextonimage">
-                                        <h1>Geekery</h1><br/>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div id="alwaysbeenageek" class="col-md-4 col-md-offset-4 text-vertical-center">
-                                        I've always been a geek. 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div id="geekerysectiontext" class="col-md-offset-1 col-md-6 section-text blacktext">
-                                    <p>
-                                        I built legos, watched Star Trek, owned all the game consoles, built computers, and 
-                                        even programmed as a kid. Always had that fascination with how things worked. I wanted
-                                        to learn how to do it all.
-                                    </p>
-                                    <br/>
-                                    <p>
-                                        I'm a <b>builder</b>: I always want to make something.  It's not enough to play games, I need to
-                                        make them too.  It's also how I learn -- I'm a hands-on learner and I want to learn by making.
-                                        That's where this website came from - I wanted to learn a bunch of new technologies. And
-                                        I didn't want to read about it.  I wanted to learn by building.
-                                    </p>
-                                    <br/>
-                                    <p>
-                                        But sometimes I just want to relax, too.  I'm a video gamer (still own all the consoles - plus the PC). 
-                                        My Steam game collection has 191 games in it, though I've probably only played 10% of them (Steam sales...). 
-                                        I love strategy (Civilization) and Grand Strategy (Paradox games), but sometimes I just want to unwind with 
-                                        some more mindless games - Diablo III, Halo, Team Fortress 2, etc.
-                                    </p>
-                                </div>
-                                <div class="col-md-4 vcenter">
-                                    <img class="img-responsive roundedcorner" src="img/geek.jpg" alt="Legos"/>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-
-                 <!-- Photography -->
-                <div id="photography" class="row">
-                    <div class="col-md-12">
-                        <section id="photographysection" class="page-section full">
+                        <section id="toolboxsection" class="page-section full">
                             <div class="row ">
                                 <div class="section-header col-md-12 whitetext">
-                                    <h1>Photography</h1>
+                                    <h1>Toolbox</h1>
                                 </div>
                             </div>
                             <div class="row">
-                                <div id="photographysectiontext" class="col-md-offset-3 col-md-6 section-text whitetext">
-                                    <p>
-                                        I took a photography course in high school, borrowing my dad's 1980s-era Canon SLR, and I loved it.
-                                        When I graduated from university, I bought a Canon digital SLR and have been shooting with it since.
-                                    </p>
-                                    <p>
-                                        <center><a class="btn btn-default" href="https://www.flickr.com/photos/asherian/sets/" target="_blank">Check out my flickr profile</a></center>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <!-- Slideshow -->
-                                <div class="container slider hidden-xs hidden-sm">
-                                    <img ng-repeat="slide in slides" class="slide slide-animation nonDraggableImage"
-                                         ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()"
-                                         ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
-
-                                    <a class="arrow prev" ng-click="nextSlide()"><i class="fa fa-arrow-left fa-fw fa-3x"></i></a>
-                                    <a class="arrow next" ng-click="prevSlide()"><i class="fa fa-arrow-right fa-fw fa-3x"></i></a>
-                                    <nav class="navi">
-                                        <div class="wrapper">
-                                            <ul class="dots">
-                                                <li class="dot" ng-repeat="slide in slides">
-                                                    <a ng-class="{'active':isCurrentSlideIndex($index)}"
-                                                       ng-click="setCurrentSlideIndex($index);">{{slide.description}}</a></li>
-                                            </ul>
+                                <div class="col-lg-8 col-lg-offset-2 whitetext">
+                                    <div class="row">
+                                        <div class="col-lg-offset-2 col-lg-8 text-vertical-center">
+                                            <h2>My Primary Tools</h2>
                                         </div>
-                                    </nav>
+                                    </div>
+                                    <hr class="small">
+                                    <div class="row">
+                                        <div class="col-md-offset-2 col-md-3 col-sm-6">
+                                            <div class="service-item">
+                                                <span class="fa-stack fa-4x">
+                                                    <img src="img/cpplogo.png" class="img-responsive" alt="C++"/>
+                                                </span>
+                                                <h4>
+                                                    <strong>C++</strong>
+                                                </h4>
+                                                <p>Language I am most experienced with.</p>
+                                                <a  class="btn btn-light" 
+                                                    title="{{popover.title}}"
+                                                    data-content="{{popover.content}}"
+                                                    data-template="partials/popovers/cpp.html"
+                                                    data-animation="am-flip-x"
+                                                    data-auto-close="1"
+                                                    data-html="true"
+                                                    bs-popover>
+                                                    Learn More</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="service-item">
+                                                <span class="fa-stack fa-4x">
+                                                    <img src="img/html5logo.png" class="img-responsive" alt="HTML5"/>
+                                                </span>
+                                                <h4>
+                                                    <strong>HTML5</strong>
+                                                </h4>
+                                                <p>Been developing for the web for a long time.</p>
+                                                <a  class="btn btn-light" 
+                                                    title="{{popover.title}}"
+                                                    data-content="{{popover.content}}"
+                                                    data-template="partials/popovers/html5.html"
+                                                    data-animation="am-flip-x"
+                                                    data-auto-close="1"
+                                                    data-html="true"
+                                                    bs-popover>
+                                                    Learn More</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="service-item">
+                                                <span class="fa-stack fa-4x">
+                                                    <img src="img/csharp.png" class="img-responsive" alt="C#"/>
+                                                </span>
+                                                <h4>
+                                                    <strong>C#</strong>
+                                                </h4>
+                                                <p>Worked with C# a lot for Windows development.</p>
+                                                <a  class="btn btn-light" 
+                                                    title="{{popover.title}}"
+                                                    data-content="{{popover.content}}"
+                                                    data-template="partials/popovers/csharp.html"
+                                                    data-animation="am-flip-x"
+                                                    data-auto-close="1"
+                                                    data-html="true"
+                                                    bs-popover>
+                                                    Learn More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.row (nested) -->
+                                    <div class="row">
+                                        <div class="col-md-offset-2 col-md-3 col-sm-6">
+                                            <div class="service-item">
+                                                <span class="fa-stack fa-4x">
+                                                    <img src="img/pythonlogo.png" class="img-responsive" alt="Python"/>
+                                                </span>
+                                                <h4>
+                                                    <strong>Python</strong>
+                                                </h4>
+                                                <p>My go-to scripting language in many environments.</p>
+                                                <a  class="btn btn-light" 
+                                                    title="{{popover.title}}"
+                                                    data-content="{{popover.content}}"
+                                                    data-template="partials/popovers/python.html"
+                                                    data-animation="am-flip-x"
+                                                    data-auto-close="1"
+                                                    data-html="true"
+                                                    bs-popover>
+                                                    Learn More</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="service-item">
+                                                <span class="fa-stack fa-4x">
+                                                    <img src="img/objclogo.png" class="img-responsive" alt="Objective-C"/>
+                                                </span>
+                                                <h4>
+                                                    <strong>Objective-C</strong>
+                                                </h4>
+                                                <p>Years of OS X &amp; iOS development.</p>
+                                                <a  class="btn btn-light" 
+                                                    title="{{popover.title}}"
+                                                    data-content="{{popover.content}}"
+                                                    data-template="partials/popovers/objc.html"
+                                                    data-animation="am-flip-x"
+                                                    data-auto-close="1"
+                                                    data-html="true"
+                                                    bs-popover>
+                                                    Learn More</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="service-item">
+                                                <span class="fa-stack fa-4x">
+                                                    <img src="img/javalogo.png" class="img-responsive" alt="Java"/>
+                                                </span>
+                                                <h4>
+                                                    <strong>Java</strong>
+                                                </h4>
+                                                <p>Android apps, miscellaneous tooling.</p>
+                                                <a  class="btn btn-light" 
+                                                    title="{{popover.title}}"
+                                                    data-content="{{popover.content}}"
+                                                    data-template="partials/popovers/java.html"
+                                                    data-animation="am-flip-x"
+                                                    data-auto-close="1"
+                                                    data-html="true"
+                                                    bs-popover>
+                                                    Learn More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.row (nested) -->
                                 </div>
+                                <!-- /.col-lg-10 -->
                             </div>
                         </section>
                     </div>
                 </div>
 
-                <!-- Music -->
-                <div id="music" class="row">
-                    <div class="col-md-12">
-                        <section id="musicsection" class="page-section full">
-                            <div class="row ">
-                                <div class="section-header col-md-12">
-                                    <h1>Music</h1>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-offset-1 col-md-4">
-                                    <img class="img-responsive roundedcorner" src="img/music-headphones.jpg" alt="I didn't draw this; don't know who did!"/>
-                                </div>
-                                <div id="musicsectiontext" class="col-md-6 section-text blacktext">
-                                    <p>
-                                        Music is a big part of my life.  Discovering new stuff, rediscovering the old stuff.  I'll spend a good 
-                                        couple hours per day with music on, whether it's through my phone, in my car, at work, or on the couch with
-                                        a vinyl playing.  (Yes, I have a small but growing vinyl collection -- you can blame my brother for introducing me to them). 
-                                    </p>
-                                    <br/>
-                                    <p>
-                                        As a kid, I took piano lessons for a number of years.  I'm also a self-taught guitar player, though I'm not
-                                        any good.  I play acoustic -- feels more proper unless I've actually got a band to play in.  There aren't enough
-                                        hours in the day to dedicate time to becoming good at it, but it's something that's on my bucket list. 
-                                    </p>
-                                    <br/>
-                                    <p>
-                                        I can get into most types of music, but I gravitate towards Alernative Rock and Indie Rock. 
-                                    </p>
-                                    <br/>
-                                    <p>
-                                        Some of my favourite bands:
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <center>
-                                        <div class="row">
-                                            <div id="thenational" class="col-md-3 band bw" onclick="window.open('https://www.youtube.com/watch?v=OBhGFu84u90', '_blank')">
-                                                The National
-                                            </div>
-                                            <div id="coldwarkids" class="col-md-3 band bw" onclick="window.open('https://www.youtube.com/watch?v=gMA3_CusL_Q', '_blank')">
-                                                Cold War Kids
-                                            </div>
-                                            <div id="florence" class="col-md-3 band bw" onclick="window.open('https://www.youtube.com/watch?v=2EIeUlvHAiM', '_blank')">
-                                                Florence + the Machine
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div id="altj" class="col-md-3 band bw" onclick="window.open('https://www.youtube.com/watch?v=Qg6BwvDcANg', '_blank')">
-                                                Alt-J
-                                            </div>
-                                            <div id="brokenbells" class="col-md-3 band bw" onclick="window.open('https://www.youtube.com/watch?v=rVxTsXRjNTw', '_blank')">
-                                                Broken Bells
-                                            </div>
-                                            <div id="thexx" class="col-md-3 band bw" onclick="window.open('https://www.youtube.com/watch?v=gI2eO_mNM88', '_blank')">
-                                                The xx
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div id="metric" class="col-md-3 band bw" onclick="window.open('https://www.youtube.com/watch?v=jq3-wZs64n4', '_blank')">
-                                                Metric
-                                            </div>
-                                            <div id="thekillers" class="col-md-3 band bw" onclick="window.open('https://www.youtube.com/watch?v=gXjeVR061-g', '_blank')">
-                                                The Killers
-                                            </div>
-                                            <div id="theblackkeys" class="col-md-3 band bw" onclick="window.open('https://www.youtube.com/watch?v=6k8es2BNloE', '_blank')">
-                                                The Black Keys
-                                            </div>
-                                        </div>
-                                    </center>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-
-                <!-- Life -->
-                <div id="life" class="row">
-                    <div class="col-md-12">
-                        <section id="lifesection" class="page-section full">
-                            <div class="row" id="lifesectionheader">
-                                <div class="section-header col-md-12 whitetextonimage">
-                                    <h1>Life</h1>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div id="lifesectiontext" class="col-md-offset-1 col-md-6 section-text whitetext">
-                                    <p>
-                                        I live in Calgary, Alberta, Canada -- in the foothills of the rockies. I'm not an urbanite, though.
-                                        I own a house in the quiet suburbs with my partner of over eleven years and our two cats.  
-                                    </p>
-                                    <br/>
-                                    <p>
-                                        When I'm not at work or at home, I like to make use of the mountains.  I haven't done it as much as I'd like to lately, but that will change.  I love hiking and snowshoeing: the serenity and clean air of the mountains, and the quietness of solitude or the accompaniment of good friends. It's also a great excuse to take some photos!  I'm an amateur camper as well: I really enjoy being able to disconnect with the digital world and reconnect with the <em>other</em> world.
-                                    </p>
-                                    <br/>
-                                    <p>
-                                        My brother got me into Scotch many years ago.  It took some experience to get into it as he did, but I'm glad I did.  I've been to numerous whiskey shows and have tried dozens of different Scotch and other whiskeys. I mostly have single-malts at home (Glenfarclas 17 &amp; Highland Park 12 are my favourite go-to drinks), but I've got nothing against the blended!  People may think I'm an alcoholic because I've got over a dozen bottles of single malts on my shelf at any given time.  I'm not, I promise! They last years!  I love variety.
-                                    </p>
-                                </div>
-                                <div class="col-md-4 vcenter">
-                                    <img class="img-responsive imageborder" src="img/me-camping.jpg" alt="Camping"/>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-offset-2 col-md-8">
-                                    <img class="img-responsive imageborder" src="img/snowshoeing.jpg" alt="Snowshoeing"/>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
 
                 <div id="contact" ng-include src="'partials/contact.html'"></div>
             </div>

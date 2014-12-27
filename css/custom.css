@@ -794,6 +794,15 @@ NAV
     text-align: justify;
 }
 
+#toolboxsection{
+    background: #337ab7;
+}
+
+.tool {
+    z-index: 1000;
+}
+
+
 /* -------------------------------------
  * timeline
  * From: http://codepen.io/P233/pen/lGewF
@@ -827,7 +836,7 @@ NAV
   left: -44px;
   width: 10px;
   height: 10px;
-  background: #48b379;
+  background: #337ab7;
   border: 5px solid #eee9dc;
   border-radius: 50%;
   display: block;
@@ -859,7 +868,7 @@ NAV
   margin-top: -20px;
 }
 .content:after {
-  border-right-color: #48b379;
+  border-right-color: #337ab7;
   border-width: 17px;
   top: 50%;
   margin-top: -17px;
@@ -874,7 +883,7 @@ NAV
 }
 
 label {
-    margin-top: -12px;
+    margin-top: -13px;
     margin-left: 10px;
   font-size: 1.3em;
   position: absolute;
@@ -892,6 +901,7 @@ label {
   cursor: auto;
   transform: translateX(42px);
   margin-top: -7px;
+  margin-left: -2px;
 }
 .radio:checked + .relative .circle {
   background: #f98262;
@@ -906,6 +916,7 @@ label {
 .radio:checked ~ .content p {
   max-height: 200px;
   color: #000;
+  text-align: left;
   transition: color 0.3s linear 0.3s;
 }
 
@@ -948,13 +959,14 @@ label {
     margin-left: -17px;
   }
   .content:after {
-    border-bottom-color: #48b379;
+    border-bottom-color: #337ab7;
     border-width: 20px;
     top: -20px;
     left: 50px;
     margin-left: -20px;
   }
   .content p {
+    color: black;
     font-size: 0.9em;
     line-height: 1.4;
   }
@@ -962,4 +974,31 @@ label {
   .circle, .date {
     display: none;
   }
+}
+
+/* popovers */
+.popover-content {
+    min-width: 250px;
+}
+
+.bignumber {
+    font-size: 4em;
+    font-weight: 800;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #339933;
+    line-height: 0.7em;
+}
+
+.language-info {
+    padding-top: 10px;
+    font-size: 1.1em;
+}
+
+.proficiency-level {
+    font-size: 1.1em;
+}
+
+.years-of-experience {
+    color: #337ab7;
+    font-weight: 700;
 }
