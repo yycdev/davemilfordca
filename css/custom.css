@@ -1011,3 +1011,16 @@ label {
 .pointer {
     cursor: pointer;
 }
+
+.skill-name {
+    font-size: 1.5em;
+    text-align: right;
+    margin-top: -4px;
+}
+
+.infobutton {
+    float: right;
+    z-index: 1000;
+    color: grey;
+    padding-right: 2px;
+}
