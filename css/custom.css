@@ -497,6 +497,7 @@ footer {
 }
 
 #geekerysectionheader {
+    margin-bottom: 20px;
     background: url(../img/geekery.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -532,6 +533,7 @@ footer {
 }
 
 #lifesectionheader {
+    margin-bottom: 20px;
     background: url(../img/life.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -743,3 +745,19 @@ NAV
     background: url(../img/bands/theblackkeys.jpg) no-repeat center center scroll;
 }
 
+.modal-backdrop.am-fade {
+  opacity: .5;
+  transition: opacity .15s linear;
+  &.ng-enter {
+    opacity: 0;
+    &.ng-enter-active {
+      opacity: .5;
+    }
+  }
+  &.ng-leave {
+    opacity: .5;
+    &.ng-leave-active {
+      opacity: 0;
+    }
+  }
+}

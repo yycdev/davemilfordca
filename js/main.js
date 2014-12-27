@@ -8,6 +8,7 @@ require.config({
         'angular': '//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min',
         'angular-route': '//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-route.min',
         'angular-animate': '//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-animate.min',
+        'angular-sanitize': '//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-sanitize.min',
         'angular-touch': 'https://code.angularjs.org/1.3.8/angular-touch.min',
         'angular-strap': 'lib/angular-strap/angular-strap.min',
         'angular-strap-tpl': 'lib/angular-strap/angular-strap.tpl.min',
@@ -31,6 +32,9 @@ require.config({
             deps: ['angular']
         },
         'angular-touch': {
+            deps: ['angular']
+        },
+        'angular-sanitize': {
             deps: ['angular']
         },
         'angular-strap': {
