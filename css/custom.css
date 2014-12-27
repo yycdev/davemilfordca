@@ -457,6 +457,11 @@ footer {
     color: #fff;
 }
 
+.whitetextwithshadow {
+    color: #fff;
+    text-shadow: 0 3px 4px #000;
+}
+
 .blacktext {
     color: #000;
 }
@@ -525,7 +530,6 @@ footer {
     background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(20,20,20,0) 70%,rgba(0,0,0,0) 76%); /* IE10+ */
     background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(20,20,20,0) 70%,rgba(0,0,0,0) 76%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
 }
 
 #photographysection{
@@ -760,4 +764,22 @@ NAV
       opacity: 0;
     }
   }
+}
+
+
+#topsection {
+    background: url(../img/whatido-background.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+#philosophysection{
+    background: #337ab7;
+}
+
+#philosophysectiontext {
+    text-align: justify;
 }
