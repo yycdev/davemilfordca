@@ -774,6 +774,7 @@ NAV
 
 
 #topsection {
+    background: black;
     background: url(../img/whatido-background.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1005,4 +1006,8 @@ label {
 
 .service-item {
     text-align: center;
+}
+
+.pointer {
+    cursor: pointer;
 }
