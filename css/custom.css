@@ -1240,3 +1240,23 @@ label {
     margin-top: -1px;
     margin-left: -1px;
 }
+
+.quote {
+  color: #666666;
+  border-left-color: #337ab7;
+}
+.quote .fa {
+  color: #337ab7;
+}
+.testimonials-source {
+  font-weight: 500;
+}
+.testimonials-name {
+  color: #939ea9;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+.testimonials-title {
+  color: #999999;
+  font-size: 0.8em;
+}
