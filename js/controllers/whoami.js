@@ -1,8 +1,12 @@
 define(['./module', 'jquery', 'gsap'], function(controllers) {
     'use strict';
 
-    function whoAmIController($scope)
+    function whoAmIController($scope, $window, $location)
     {
+    	$scope.$on('$viewContentLoaded', function(event) {
+		$window.ga('send', 'pageview', { page: $location.path() });
+  		}); 
+
     	    $scope.slides = [
     	    {image: 'img/flickr/bird_sm.jpg', description: 'Image 00'},
             {image: 'img/flickr/bee_sm.jpg', description: 'Image 01'},
@@ -73,7 +77,7 @@ define(['./module', 'jquery', 'gsap'], function(controllers) {
         };
     });
 
-    whoAmIController.$inject=['$scope'];
+    whoAmIController.$inject=['$scope', '$window', '$location'];
 
-    controllers.controller('WhoAmICtrl', ['$scope', whoAmIController]);
+    controllers.controller('WhoAmICtrl', ['$scope', '$window', '$location', whoAmIController]);
 });
